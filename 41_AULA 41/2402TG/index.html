@@ -1,28 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cantina</title>
+    <link rel="stylesheet" href="style.css"> <!-- Referencia o arquivo CSS -->
+    
 </head>
 <body>
+    <h1>Lanchonete da Dona Lurdes</h1>
+    <form action="" role="form" method="post" id="cardapio"> <!--inserindo um formulário na pagina-->
+        <table > <!-- Adicionando borda para visualização -->
+            <thead>
+                <tr>
+                    <th>Salgado</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cachorro Quente</td>
+                    <td align="center">
+                        <input type="text" name="qtd01" id="qtd01" value="0" class="borda2" />
+                    </td>
+                    <td class="alinhado-centro">1,20</td>
+                </tr>
+                <tr>
+                    <td>Bauru simples</td>
+                    <td align="center">
+                        <input type="text" name="qtd02" id="qtd02" min="0" step="1" value="0" class="borda2" required>
+                    </td>
+                    <td class="alinhado-centro">1,30</td>
+                </tr>
+                <tr>
+                    <td>Bauru com ovo</td>
+                    <td align="center">
+                        <input type="text" name="qtd03" id="qtd03" min="0" step="1" value="0" class="borda2" required>
+                    </td>
+                    <td class="alinhado-centro">1,50</td>
+                </tr>
+                <tr>
+                    <td>Hamburguer</td>
+                    <td align="center">
+                        <input type="text" name="qtd04" id="qtd04" min="0" step="1" value="0" class="borda2" required>
+                    </td>
+                    <td class="alinhado-centro">1,20</td>
+                </tr>
+                <tr>
+                    <td>Cheeseburguer</td>
+                    <td align="center">
+                        <input type="text" name="qtd05" id="qtd05" min="0" step="1" value="0" class="borda2" required>
+                    </td>
+                    <td class="alinhado-centro">1,30</td>
+                </tr>
+                <tr>
+                    <td>Refrigerante</td>
+                    <td align="center">
+                        <input type="text" name="qtd06" id="qtd06" min="0" step="1" value="0" class="borda2" required>
+                    </td>
+                    <td class="alinhado-centro">1,00</td>
+                </tr>
+                <tr>
+                    <td class="alinhado-centro">Total da compra</td>
+                    <td align="center">-</td>
+                    <td align="center">
+                        <input type="text" name="pre" id="pre" min="0" step="1" value="0" class="borda" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center">
+                        <button type="button" onclick="cardapio()">Somar</button>
+                    </td>
+                </tr>
+                <!-- Linha para Seleção de Pagamento -->
+                <tr>
+                    <td colspan="3" class="centered-text">
+                        <p>Escolha a Forma de Pagamento</p>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" name="paymentMethod" value="cartao" checked> Cartão de Crédito
+                            </label>
+                            <label>
+                                <input type="radio" name="paymentMethod" value="boleto"> Boleto Bancário
+                            </label>
+                            <label>
+                                <input type="radio" name="paymentMethod" value="pix"> Pix
+                            </label>
+                        </div>
+                        <button type="button" onclick="submitPayment()">Confirmar Pagamento</button>
+                        <p id="selectedPayment"></p> <!-- Adicionando o elemento para exibir a forma de pagamento selecionada -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
 
-    <div style="text-align: center;">
-        <h1>SENAI Brás</h1>
-    </div>
-    <div style="text-align: center;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kJqf95gNnXM" title="GABRIEL MEDINA RIPPING AT HOME!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div>
-        <h1>Audio</h1>
-        <audio controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
-        </audio>
-    </div>
-    <div>
-        <p>Exemplo <span style="color: blue;">exmplo span</span></p>
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
-

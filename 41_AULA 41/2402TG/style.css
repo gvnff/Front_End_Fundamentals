@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo caso a imagem não carregue */
+    background-image: url('https://img.freepik.com/vetores-gratis/ilustracao-de-cantina-de-escola-de-design-plano_23-2149575264.jpg?t=st=1723406549~exp=1723410149~hmac=256c6bddb944a3a4e5d3293d5863133de08e2dcb681903b99a14819b3e59eed2&w=740'); /* Caminho para a imagem de fundo */
+   /* background-image: url('camhttps://img.freepik.com/vetores-gratis/ilustracao-de-cantina-de-escola-de-design-plano_23-2149575264.jpg?t=st=1723406549~exp=1723410149~hmac=256c6bddb944a3a4e5d3293d5863133de08e2dcb681903b99a14819b3e59eed2&w=740inho/para/sua-imagem.jpg');  Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-family: 'Arial', sans-serif; /* Define a fonte */
+    font-size: 36px; /* Define o tamanho da fonte */
+    color: #f8550a; /* Define a cor do texto (marrom) */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Define a margem superior */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao texto */
+}
+table {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px; /* Adiciona um espaçamento entre o h1 e a tabela */
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /*background: #fff; */
+    background: rgba(238, 240, 236, 0.587) url('https://pt.dreamstime.com/fundo-culin%C3%A1ria-cozimento-sem-emenda-mostarda-image64189369.jpg') no-repeat center center;  Adiciona a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área da tabela */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.alinhado-centro {
+            text-align: center;
+}
+.form-group{
+    text-align: center;
+    
+  }
+  .centered-text {
+    text-align: center;
+}
